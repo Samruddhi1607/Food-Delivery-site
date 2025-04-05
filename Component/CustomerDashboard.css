@@ -1,0 +1,27 @@
+.dashboard-container {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    background: #ffe0b2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #ff6f00;
+  }
+  
+  .customer-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #444;
+  }
+  

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.cart-container {
+    max-width: 550px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(232, 245, 233, 0.8); /* Soft Glassmorphic Background */
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cart Items */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 18px;
+    background: rgba(200, 230, 201, 0.85); /* Fresh Light Green */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-item:hover {
+    background: rgba(165, 214, 167, 0.95);
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Quantity Buttons */
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-control button {
+    background: #2E7D32; /* Deep Green */
+    color: #fff;
+    border: none;
+    padding: 7px 14px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.quantity-control button:hover {
+    background: #1E5621;
+    transform: scale(1.08);
+}
+
+/* Quantity Number */
+.quantity-control span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Cart Summary */
+.cart-summary p {
+    font-size: 16px;
+    margin: 6px 0;
+    color: #444;
+}
+
+.cart-summary h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2E7D32;
+    margin-top: 12px;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    background: linear-gradient(135deg, #388E3C, #66BB6A); /* Smooth Green Gradient */
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-btn:hover {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+    transform: scale(1.07);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove Button */
+.remove-btn {
+    background: #D32F2F; /* Deep Red */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.remove-btn:hover {
+    background: #B71C1C;
+    transform: scale(1.07);
+}
+
+/* Unified Button Styles */
+.checkout-btn, .remove-btn, .quantity-control button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 14px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+    color: #D32F2F;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 600px) {
+    .cart-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .checkout-btn {
+        width: 100%;
+    }
+}

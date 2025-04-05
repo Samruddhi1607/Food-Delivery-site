@@ -1,0 +1,102 @@
+.checkout-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #e6f5dc;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .payment-methods {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .payment-methods label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .payment-methods input {
+    margin-right: 10px;
+  }
+  
+  .payment-methods label:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transform: scale(1.05);
+  }
+  
+  .payment-details {
+    margin: 15px 0;
+  }
+  
+  .payment-details input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .apply-btn {
+    background-color: #218838;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(114, 175, 240, 0.5);
+}
+
+.apply-btn:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+  .place-order-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .place-order-btn:hover {
+    background: #218838;
+  }
+  
+  .place-order-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  /* 📱 Responsive */
+@media (max-width: 480px) {
+    .checkout-container {
+        padding: 10px;
+    }
+
+    .place-order-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .order-item {
+        font-size: 14px;
+    }
+}

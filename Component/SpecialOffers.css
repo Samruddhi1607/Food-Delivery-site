@@ -1,0 +1,84 @@
+.offers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(247, 255, 246);
+    padding: 20px;
+    width: 100%;
+}
+  
+  
+  h2 {
+    color: #ff5733;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .offers-slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .offer-card {
+    display: none; /* Hide all initially */
+    text-align: center;
+    background: #e7ffe1;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .offer-card.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .offer-img {
+    width: 100%;  /* Ensures image takes full width of the container */
+    height: 200px; /* Maintains aspect ratio */
+    object-fit:contain; /* Ensures the image covers the entire space without distortion */
+    border-radius: 10px; 
+  }
+  
+  .offer-details {
+    padding: 15px;
+  }
+  
+  .discount-badge {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  h3 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  .claim-btn {
+    background: #ff5733;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .claim-btn:hover {
+    background: #e04b2f;
+  }
+  
