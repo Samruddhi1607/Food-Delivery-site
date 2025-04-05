@@ -3,7 +3,7 @@
 A responsive and dynamic food delivery application built using **React.js**. This app allows users to browse menus, add food items to the cart, apply discounts, and place orders seamlessly.
 
 ## 🚀 Live Demo
-
+https://samruddhi1607.github.io/Food-Delivery-site/
 
 Features
 
